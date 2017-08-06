@@ -8,12 +8,12 @@ A Chrome Plugin for easy Echos
 * Drag Echofy folder into chrome and drop over extensions
 * Get woke.
 
-####NOTE:
+#### NOTE:
 
   Does not work on some fields on facebook and Youtube. Will work to get that working, until then #StayWokeFam
   
   
-####Usage:
+#### Usage:
 
   Any word with a # on it will be echoed when spacebar is pressed.
   
