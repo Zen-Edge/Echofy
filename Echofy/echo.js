@@ -6,9 +6,11 @@
     ];
     var spaceBarPressed;
     var isTextTag;
+    var foundHash;
 
     document.addEventListener("keydown", function(e) {
 
+        foundHash = false;
         spaceBarPressed = e.keyCode === 32;
         isTextTag = (tags.indexOf(document.activeElement.tagName) !== -1);
 
@@ -27,13 +29,17 @@
                     {
                         if (words[j].length === 1) return;
 
+                        foundHash = true;
+
                         words[j] = `(((${words[j].replace(/[#]*[']*/g, "")})))`;
                         lines[i] = words.join(" ");                        
                     }
                 }
             }
 
-            document.activeElement.value = lines.join("\n");
+            if (foundHash)
+                document.activeElement.value = lines.join("\n");
+
         }
     });
 })();
