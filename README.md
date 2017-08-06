@@ -15,7 +15,7 @@ A Chrome Plugin for easy Echos
   
 ### Usage:
 
-  Any word with a # on it will be echoed when spacebar is pressed.
+  Any word with a # on/in it will be echoed when spacebar is pressed.
   
   `#them --> (((them)))`
   
